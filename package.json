@@ -35,7 +35,9 @@
     "eslint-plugin-vue": "^6.2.2",
     "less": "^3.0.4",
     "less-loader": "^5.0.0",
-    "vue-template-compiler": "^2.6.11"
+    "vue-loader": "^15.9.3",
+    "vue-markdown-loader": "^2.4.1",
+    "vue-template-compiler": "^2.6.12"
   },
   "eslintConfig": {
     "root": true,
@@ -49,7 +51,9 @@
     "parserOptions": {
       "parser": "babel-eslint"
     },
-    "rules": {},
+    "rules": {
+      "indent": ["error", 4]
+    },
     "overrides": [
       {
         "files": [
