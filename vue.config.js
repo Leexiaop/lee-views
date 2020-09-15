@@ -24,7 +24,7 @@ module.exports = {
             .rule('eslint')
             .exclude.add(path.resolve('dist'))
             .end()
-            .exclude.add(path.resolve('examples/views'))
+            .exclude.add(path.resolve('examples/docs'))
             .end()
         config.module
             .rule('js')

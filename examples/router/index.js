@@ -7,7 +7,7 @@ export const routes = [
     {
         path: '/',
         name: 'Index',
-        component: () => import('../views/Index.md'),
+        component: () => import('../docs/Index.md'),
         meta: {
             id: 1,
             name: '首页',
@@ -18,7 +18,7 @@ export const routes = [
     {
         path: '/button',
         name: 'Button',
-        component: () => import('../views/Button.md'),
+        component: () => import('../docs/Button.md'),
         meta: {
             id: 2,
             name: '按钮',
