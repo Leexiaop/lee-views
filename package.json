@@ -1,13 +1,14 @@
 {
   "name": "lee-views",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "test:unit": "vue-cli-service test:unit",
     "test:e2e": "vue-cli-service test:e2e",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "lib": "vue-cli-service build --target lib --name lee-views --dest lib packages/index.js"
   },
   "dependencies": {
     "core-js": "^3.6.5",
@@ -52,7 +53,10 @@
       "parser": "babel-eslint"
     },
     "rules": {
-      "indent": ["error", 4]
+      "indent": [
+        "error",
+        4
+      ]
     },
     "overrides": [
       {
@@ -70,5 +74,25 @@
     "> 1%",
     "last 2 versions",
     "not dead"
-  ]
+  ],
+  "description": "## Project setup ``` npm install ```",
+  "main": "babel.config.js",
+  "directories": {
+    "example": "examples",
+    "lib": "lib",
+    "test": "tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Leexiaop/lee-views.git"
+  },
+  "keywords": [
+    "lee-views"
+  ],
+  "author": "lee",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Leexiaop/lee-views/issues"
+  },
+  "homepage": "https://github.com/Leexiaop/lee-views#readme"
 }

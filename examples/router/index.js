@@ -21,6 +21,17 @@ export const routes = [
         }
     },
     {
+        path: '/test',
+        name: 'Text',
+        component: () => import('../docs/test.vue'),
+        meta: {
+            id: 3,
+            name: '测试',
+            icon: '',
+            children: []
+        }
+    },
+    {
         path: '/button',
         name: 'Button',
         component: () => import('../docs/Button.md'),
