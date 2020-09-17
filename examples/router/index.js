@@ -15,7 +15,7 @@ export const routes = [
         component: () => import('../docs/Index.md'),
         meta: {
             id: 1,
-            name: '首页',
+            name: '安装教程',
             icon: '',
             children: []
         }

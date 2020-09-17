@@ -1,12 +1,21 @@
 <template>
     <div>
-        <lee-button></lee-button>
+        <lee-button @click="handleButtonClick">按钮</lee-button>
     </div>
 </template>
 <script>
+import demo from './Button.md'
+console.log(demo)
 export default {
     data () {
-        return {}
+        return {
+            md: demo
+        }
+    },
+    methods: {
+        handleButtonClick (e) {
+            console.log(e)
+        }
     }
 }
 </script>

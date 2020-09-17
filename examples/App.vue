@@ -34,6 +34,11 @@ export default {
 .app {
     width: 100%;
     height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
     .nav {
       width: 100%;
       height: 100px;
@@ -69,7 +74,7 @@ export default {
             width: 100%;
             height: 100%;
             flex:1;
-            background-color: blue;
+            padding: 24px;
         }
     }
 }
