@@ -1,15 +1,11 @@
 <template>
-    <div>
-        <lee-button @click="handleButtonClick">按钮</lee-button>
+    <div>测试而已
     </div>
 </template>
 <script>
-import demo from './Button.md'
-console.log(demo)
 export default {
     data () {
         return {
-            md: demo
         }
     },
     methods: {
