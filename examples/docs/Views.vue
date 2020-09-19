@@ -1,5 +1,5 @@
 <template>
-    <div>测试而已
+    <div class="views">测试而已
     </div>
 </template>
 <script>
@@ -16,4 +16,9 @@ export default {
 }
 </script>
 <style lang="less" scoped>
+.views {
+    width: 100%;
+    height: 100%;
+    padding: 24px;
+}
 </style>

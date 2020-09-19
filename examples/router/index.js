@@ -11,30 +11,36 @@ export const routes = [
     {
         id: 1,
         path: '/',
-        name: 'Views',
+        // name: 'Views',
         title: '预览',
         component: () => import('../docs/Views.vue')
     },
     {
         id: 2,
         path: '/doc',
-        // name: 'Doc',
+        // name: 'Docs',
         title: '文档',
-        // component: () => import('../docs/Docs.vue'),
+        component: () => import('../docs/Docs.vue'),
         children: [
             {
                 id: 1,
                 path: '/',
                 name: 'Index',
                 title: '安装教程',
-                compcomponent: () => import('../docs/Index.md')
+                component: () => import('../docs/Index.md'),
+                meta: {
+                    parent: '/doc'
+                }
             },
             {
                 id: 2,
-                path: '/button',
+                path: '/doc/button',
                 name: 'Button',
                 title: '按钮Button',
-                compcomponent: () => import('../docs/Button.md')
+                component: () => import('../docs/Button.md'),
+                meta: {
+                    parent: '/doc'
+                }
             }
         ]
     }
