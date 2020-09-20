@@ -49,9 +49,9 @@ export default {
         margin: 0;
         padding: 0;
         li {
-            height: 60px;
+            height: 50px;
             width: 100%;
-            line-height: 60px;
+            line-height: 50px;
             list-style: none;
             text-align: center;
             .active {

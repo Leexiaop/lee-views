@@ -2,6 +2,7 @@
     <button
         @click="handleButtonClick"
         :disabled="disabled"
+        :class="[type]"
         >
         <slot></slot>
     </button>

@@ -11,23 +11,21 @@ export const routes = [
     {
         id: 1,
         path: '/',
-        // name: 'Views',
         title: '预览',
-        component: () => import('../docs/Views.vue')
+        component: () => import('@/docs/Views.vue')
     },
     {
         id: 2,
         path: '/doc',
-        // name: 'Docs',
         title: '文档',
-        component: () => import('../docs/Docs.vue'),
+        component: () => import('@/docs/Docs.vue'),
         children: [
             {
                 id: 1,
                 path: '/',
                 name: 'Index',
                 title: '安装教程',
-                component: () => import('../docs/Index.md'),
+                component: () => import('@/components/docs/Index.md'),
                 meta: {
                     parent: '/doc'
                 }
@@ -37,7 +35,7 @@ export const routes = [
                 path: '/doc/button',
                 name: 'Button',
                 title: '按钮Button',
-                component: () => import('../docs/Button.md'),
+                component: () => import('@/components/docs/Button.md'),
                 meta: {
                     parent: '/doc'
                 }

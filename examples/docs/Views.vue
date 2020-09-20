@@ -1,9 +1,14 @@
 <template>
-    <div class="views">测试而已
+    <div class="views">
+        <lee-button>按钮</lee-button>
     </div>
 </template>
 <script>
+// import LeeButton from '../../packages/index'
 export default {
+    // components: {
+    //     LeeButton
+    // },
     data () {
         return {
         }
