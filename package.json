@@ -1,6 +1,6 @@
 {
   "name": "lee-views",
-  "version": "0.1.0",
+  "version": "0.1.8",
   "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
@@ -76,7 +76,7 @@
     "not dead"
   ],
   "description": "## Project setup ``` npm install ```",
-  "main": "babel.config.js",
+  "main": "lib/lee-views.umd.min.js",
   "directories": {
     "example": "examples",
     "lib": "lib",
@@ -90,7 +90,7 @@
     "lee-views"
   ],
   "author": "lee",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/Leexiaop/lee-views/issues"
   },

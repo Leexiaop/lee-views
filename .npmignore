@@ -26,6 +26,7 @@ yarn-error.log*
 examples/
 packages/
 public/
+tests/
 vue.config.js
 babel.config.js
 *.map

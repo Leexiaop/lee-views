@@ -2,37 +2,23 @@
     <button
         @click="handleButtonClick"
         :disabled="disabled"
-        :class="[type]"
+        :style="buttonStyle"
+        class="lee-button"
         >
-        <slot></slot>
+            <template v-if="!$slots.default">按钮</template>
+            <slot v-else></slot>
     </button>
 </template>
 <script>
 export default {
     name: 'LeeButton',
     props: {
-        //  button的类型：default, warning, danger, loading, link, dashed, ghost, text, primary
-        type: {
-            type: String,
+        buttonStyle: {
+            type: Object,
             default: () => {
-                return 'default'
+                return {}
             }
         },
-        //  button的大小： small, middle, large
-        size: {
-            type: String,
-            default: () => {
-                return 'small'
-            }
-        },
-        //  button的形状： circle, round
-        shap: {
-            type: String,
-            default: () => {
-                return 'round'
-            }
-        },
-        //  button是否禁用： true, false
         disabled: {
             type: Boolean,
             default: () => {
@@ -51,5 +37,13 @@ export default {
 }
 </script>
 <style lang="less" scoped>
-
+.lee-button {
+    border: none;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-color: #1890ff;
+}
 </style>

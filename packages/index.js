@@ -1,7 +1,11 @@
 import LeeButton from './leeButton/index.js'
+import LeeInput from './leeInput/index.js'
+import LeeModal from './leeModal/index.js'
 
 const components = [
-    LeeButton
+    LeeButton,
+    LeeInput,
+    LeeModal
 ]
 
 const install = function (Vue) {
@@ -15,5 +19,5 @@ if (typeof window !== 'undefined' && window.Vue) {
 
 export default {
     install,
-    LeeButton
+    ...components
 }

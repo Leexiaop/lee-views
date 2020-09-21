@@ -1,6 +1,6 @@
 import LeeButton from './src/button.vue'
 
-LeeButton.insall = function (Vue) {
+LeeButton.install = function (Vue) {
     Vue.component(LeeButton.name, LeeButton)
 }
 

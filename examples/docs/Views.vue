@@ -1,14 +1,12 @@
 <template>
     <div class="views">
-        <lee-button>按钮</lee-button>
+        <lee-button :buttonStyle="{backgroundColor: 'red'}" @click="handleButtonClick"></lee-button>
+        <lee-input :inputStyle="{width: '300px'}">标签</lee-input>
+        <lee-modal></lee-modal>
     </div>
 </template>
 <script>
-// import LeeButton from '../../packages/index'
 export default {
-    // components: {
-    //     LeeButton
-    // },
     data () {
         return {
         }

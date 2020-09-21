@@ -22,7 +22,7 @@ module.exports = {
             .set('~', resolve('packages'))
         config.module
             .rule('eslint')
-            .exclude.add(path.resolve('dist'))
+            .exclude.add(path.resolve('lib'))
             .end()
             .exclude.add(path.resolve('examples/docs'))
             .end()
