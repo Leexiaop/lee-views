@@ -50,5 +50,9 @@ module.exports = {
             .options({
                 raw: true
             })
+    },
+    devServer: {
+        open: true,
+        port: 5511
     }
 }
