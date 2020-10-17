@@ -1,6 +1,7 @@
 <template>
     <div class="app">
         <div class="nav">
+            <img class="logo" src="./assets/logo.png" alt="">
             <p>读万卷书，行万里路，代码运行了那么久，却总缺个自己的UI库！！</p>
             <ul>
                 <li v-for="item in routerList" :key="item.id"
@@ -13,6 +14,7 @@
                     </router-link>
                 </li>
             </ul>
+            <a class="github" href="https://github.com/Leexiaop/lee-views" target="_blank">Github <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgdmlld0JveD0iMTIgMTIgNDAgNDAiPjxwYXRoIGZpbGw9IiMzMzMiIGQ9Ik0zMiAxMy40Yy0xMC41IDAtMTkgOC41LTE5IDE5IDAgOC40IDUuNSAxNS41IDEzIDE4IDEgLjIgMS4zLS40IDEuMy0uOXYtMy4yYy01LjMgMS4xLTYuNC0yLjYtNi40LTIuNi0uOS0yLjEtMi4xLTIuNy0yLjEtMi43LTEuNy0xLjIuMS0xLjEuMS0xLjEgMS45LjEgMi45IDIgMi45IDIgMS43IDIuOSA0LjUgMi4xIDUuNSAxLjYuMi0xLjIuNy0yLjEgMS4yLTIuNi00LjItLjUtOC43LTIuMS04LjctOS40IDAtMi4xLjctMy43IDItNS4xLS4yLS41LS44LTIuNC4yLTUgMCAwIDEuNi0uNSA1LjIgMiAxLjUtLjQgMy4xLS43IDQuOC0uNyAxLjYgMCAzLjMuMiA0LjcuNyAzLjYtMi40IDUuMi0yIDUuMi0yIDEgMi42LjQgNC42LjIgNSAxLjIgMS4zIDIgMyAyIDUuMSAwIDcuMy00LjUgOC45LTguNyA5LjQuNy42IDEuMyAxLjcgMS4zIDMuNXY1LjJjMCAuNS40IDEuMSAxLjMuOSA3LjUtMi42IDEzLTkuNyAxMy0xOC4xIDAtMTAuNS04LjUtMTktMTktMTl6Ii8+PC9zdmc+" alt=""></a>
         </div>
         <div class="content">
             <router-view></router-view>
@@ -50,6 +52,11 @@ export default {
         align-items: center;
         color: #666;
         border-bottom: 1px solid #eee;
+        .logo {
+            display: block;
+            height: 100%;
+            width: auto;
+        }
         p {
             width: 80%;
         }
@@ -70,7 +77,12 @@ export default {
                 }
             }
         }
-
+        .github {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+        }
     }
     .content {
         width: 100%;

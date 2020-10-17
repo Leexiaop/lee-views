@@ -30,6 +30,11 @@ export default {
                     id: 2,
                     path: '/doc/button',
                     title: '按钮Button'
+                },
+                {
+                    id: 3,
+                    path: '/doc/modal',
+                    title: '对话框Modal'
                 }
             ]
         }

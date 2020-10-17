@@ -1,12 +1,9 @@
 <template>
     <div class="views">
-        <lee-button :buttonStyle="{backgroundColor: 'red'}" @click="handleButtonClick"></lee-button>
+        <lee-button type="danger" size="large" :loading="false" :shape="false" @click="handleButtonClick"></lee-button>
+        <!-- <lee-modal></lee-modal>
         <lee-input :inputStyle="{width: '300px'}">标签</lee-input>
-        <lee-modal background="'https://cdn.qsebao.com/zbb/static/images/drgs/landPage/ganyuanbao/header-img_3.png'">
-            <!-- <div slot="title">dadadadad</div> -->
-            <div>这里是    &nbsp;内容</div>
-            <div class=""></div>
-        </lee-modal>
+        <lee-divider position="left" :leftDashed="true" :rightDashed="false" leftHeight="15px" leftLineColor="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1602849726859&di=e4ba67718d65acc56a197b1af073271f&imgtype=0&src=http%3A%2F%2Fa0.att.hudong.com%2F56%2F12%2F01300000164151121576126282411.jpg"><span style="color: red;">我是分割线</span></lee-divider> -->
     </div>
 </template>
 <script>

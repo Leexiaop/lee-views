@@ -1,6 +1,12 @@
 <template>
     <div class="lee-modal" v-if="show">
-        <div class="lee-modal-main" :style="{ height: height, width: width, backgroundImage: `url(${background})`,backgroundRepeat: 'no-repeat', background, backgroundSize: '100% 100%', backgroundColor: background }">
+        <div class="lee-modal-main" :style="{
+            height: height,
+            width: width,
+            backgroundImage: `url(${background})`,
+            backgroundRepeat: 'no-repeat',
+            backgroundSize: '100% 100%',
+            backgroundColor: background }">
             <div class="lee-modal-main-title" :class="{titleShow: !title}">
                     <template v-if="!$slots.title">
                         <div class="lee-modal-main-title-content">
@@ -40,7 +46,7 @@ export default {
         show: {
             type: Boolean,
             default: () => {
-                return true
+                return false
             }
         },
         width: {
