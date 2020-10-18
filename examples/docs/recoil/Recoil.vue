@@ -18,24 +18,29 @@
 </template>
 <script>
 export default {
-    name: 'Docs',
+    name: 'Recoil',
     data () {
         return {
             menuList: [
                 {
                     id: 1,
-                    path: '/doc',
-                    title: '安装教程'
+                    path: '/recoil',
+                    title: '简介'
                 },
                 {
                     id: 2,
-                    path: '/doc/button',
-                    title: '按钮Button'
+                    path: '/recoil/tutorial',
+                    title: '基础教程'
                 },
                 {
                     id: 3,
-                    path: '/doc/modal',
-                    title: '对话框Modal'
+                    path: '/recoil/guides',
+                    title: '学习指南'
+                },
+                {
+                    id: 4,
+                    path: '/recoil/api',
+                    title: 'API参考手册'
                 }
             ]
         }
