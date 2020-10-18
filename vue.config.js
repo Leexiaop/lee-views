@@ -53,6 +53,9 @@ module.exports = {
     },
     devServer: {
         open: true,
-        port: 5511
+        port: 5511,
+        disableHostCheck: true,
+        host: 'localhost',
+        publicPath: '/'
     }
 }
