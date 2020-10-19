@@ -23,37 +23,37 @@
 export default {
     name: 'LeeDivider',
     props: {
-        leftDashed: {
+        'left-dashed': {
             type: Boolean,
             default: () => {
                 return false
             }
         },
-        rightDashed: {
+        'right-dashed': {
             type: Boolean,
             default: () => {
                 return false
             }
         },
-        leftLineColor: {
+        'left-line-color': {
             type: String,
             default: () => {
                 return '#eee'
             }
         },
-        rightLineColor: {
+        'right-line-color': {
             type: String,
             default: () => {
                 return '#eee'
             }
         },
-        leftHeight: {
+        'left-height': {
             type: String,
             default: () => {
                 return ''
             }
         },
-        rightHeight: {
+        'right-height': {
             type: String,
             default: () => {
                 return ''

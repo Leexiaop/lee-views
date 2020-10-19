@@ -1,52 +1,39 @@
 <template>
     <div class="lee-input">
-        <label for="input" v-if="$slots.default" class="lee-input-label" :style="labelStyle"><slot></slot></label>
-        <input :type="type" name="input" :placeholder="placeholder" class="lee-input-input" :style="inputStyle">
+        <label for="input" v-if="$slots.default">
+            <slot></slot>
+        </label>
+        <div class="lee-input-input">
+            <input type="text" :style="{
+                width: width,
+                height: height
+            }">
+            <span></span>
+        </div>
     </div>
 </template>
 <script>
 export default {
     name: 'LeeInput',
     props: {
-        inputStyle: {
-            type: Object,
-            default: () => {
-                return {}
-            }
-        },
-        labelStyle: {
-            type: Object,
-            default: () => {
-                return {}
-            }
-        },
-        type: {
+        width: {
             type: String,
             default: () => {
-                return 'text'
+                return '300px'
             }
         },
-        placeholder: {
+        height: {
             type: String,
             default: () => {
-                return '请输入内容'
-            }
-        },
-        disabled: {
-            type: Boolean,
-            default: () => {
-                return false
-            }
-        },
-        clear: {
-            type: Boolean,
-            defaullt: () => {
-                return false
+                return '24px'
             }
         }
     },
     data () {
         return {}
+    },
+    mounted () {
+        console.log(this.$slots)
     },
     methods: {
     }
@@ -54,23 +41,13 @@ export default {
 </script>
 <style lang="less" scoped>
 .lee-input {
-    width: auto;
-    height: auto;
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
     align-items: center;
-    .lee-input-label {
-        max-width: 25%;
+    label {
         height: 100%;
-        display: flex;
-        justify-items: center;
-        align-items: center;
-    }
-    .lee-input-input {
-        max-width: 75%;
-        height: 100%;
-        padding: 5px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
     }
 }
 </style>

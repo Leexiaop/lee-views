@@ -1,6 +1,6 @@
 <template>
     <div class="docs">
-        <ul class="aside">
+        <ul class="docs-aside">
             <li v-for="item in menuList" :key="item.id"
                 :style="{
                     color: $route.path === item.path ? '#1890ff' : '#666',
@@ -11,33 +11,18 @@
                 <router-link :to="item.path" :class="{ active: $route.path === item.path }">{{item.title}}</router-link>
             </li>
         </ul>
-        <div class="content">
+        <div class="docs-content">
             <router-view></router-view>
         </div>
     </div>
 </template>
 <script>
+import { Docs } from '@/router/docs'
 export default {
     name: 'Docs',
     data () {
         return {
-            menuList: [
-                {
-                    id: 1,
-                    path: '/doc',
-                    title: '安装教程'
-                },
-                {
-                    id: 2,
-                    path: '/doc/button',
-                    title: '按钮Button'
-                },
-                {
-                    id: 3,
-                    path: '/doc/modal',
-                    title: '对话框Modal'
-                }
-            ]
+            menuList: Docs
         }
     }
 }
@@ -48,7 +33,7 @@ export default {
     height: 100%;
     display: flex;
     justify-content: space-between;
-    .aside {
+    .docs-aside {
         height: 100%;
         width: 200px;
         background-color: #FFF4E8;
@@ -69,10 +54,9 @@ export default {
             }
         }
     }
-    .content {
-        width: 100%;
+    .docs-content {
+        width: calc(100% - 240px);
         height: 100%;
-        padding: 24px;
     }
 }
 </style>

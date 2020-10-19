@@ -38,7 +38,7 @@ export default {
     width: 100%;
     height: 100%;
     position: fixed;
-    overflow: scroll;
+    overflow-y: auto;
     top: 0;
     left: 0;
     bottom: 0;
@@ -60,13 +60,17 @@ export default {
             width: auto;
         }
         p {
-            width: 80%;
+            width: 100%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
         }
         ul {
-            width: 20%;
+            width: 300px;
             display: flex;
             justify-content: space-around;
             align-items: center;
+            padding: 0;
             li {
                 width: 100%;
                 list-style: none;
@@ -92,8 +96,7 @@ export default {
     }
     .content {
         width: 100%;
-        height: 100%;
-        flex:1;
+        height: calc(100% - 61px);
     }
 }
 </style>

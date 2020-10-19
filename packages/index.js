@@ -2,12 +2,14 @@ import LeeButton from './leeButton/index.js'
 import LeeInput from './leeInput/index.js'
 import LeeModal from './leeModal/index.js'
 import LeeDivider from './leeDivider/index.js'
+import LeeDatePicker from './leeDatePicker'
 
 const components = [
     LeeButton,
     LeeInput,
     LeeModal,
-    LeeDivider
+    LeeDivider,
+    LeeDatePicker
 ]
 
 const install = function (Vue) {
