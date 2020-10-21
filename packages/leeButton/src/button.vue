@@ -129,7 +129,7 @@ export default {
 .lee-ghost {
     background-color: rgba(0, 0, 0, 0);
     color: #606266;
-    border: 1px solid #dcdfe6;
+    // border: 1px solid #dcdfe6;
 }
 .lee-shape {
     border-radius: 50%;
