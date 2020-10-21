@@ -1,15 +1,17 @@
-import LeeButton from './leeButton/index.js'
-import LeeInput from './leeInput/index.js'
-import LeeModal from './leeModal/index.js'
-import LeeDivider from './leeDivider/index.js'
+import LeeButton from './leeButton'
+import LeeInput from './leeInput'
+import LeeModal from './leeModal'
+import LeeDivider from './leeDivider'
 import LeeDatePicker from './leeDatePicker'
+import LeeTree from './leeTree'
 
 const components = [
     LeeButton,
     LeeInput,
     LeeModal,
     LeeDivider,
-    LeeDatePicker
+    LeeDatePicker,
+    LeeTree
 ]
 
 const install = function (Vue) {
