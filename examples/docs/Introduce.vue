@@ -3,7 +3,7 @@
         <div class="introduce-nav">
             <h1>Lee-Views</h1>
             <p>A design system for Vue by personal individual. Create an efficient and enjoyable work experience.</p>
-            <lee-button type="ghost" width="152px" height="56px" color="#fff" @click="getStart">Get Start</lee-button>
+            <lee-button type="default" background="#3578e5" width="152px" height="56px" color="#fff" @click="getStart">Get Start</lee-button>
         </div>
         <div class="introduce-content">
             <h2>设计初衷</h2>

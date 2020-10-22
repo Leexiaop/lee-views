@@ -4,6 +4,13 @@ import LeeModal from './leeModal'
 import LeeDivider from './leeDivider'
 import LeeDatePicker from './leeDatePicker'
 import LeeTree from './leeTree'
+import LeeDrawer from './leeDrawer'
+import LeeTransfer from './leeTransfer'
+import LeeSteps from './leeSteps'
+import LeeSelect from './leeSelect'
+import LeePagination from './leePagination'
+import LeeCollapse from './leeCollapse'
+import LeeCarousel from './leeCarousel'
 
 const components = [
     LeeButton,
@@ -11,7 +18,14 @@ const components = [
     LeeModal,
     LeeDivider,
     LeeDatePicker,
-    LeeTree
+    LeeTree,
+    LeeDrawer,
+    LeeTransfer,
+    LeeSteps,
+    LeeSelect,
+    LeePagination,
+    LeeCollapse,
+    LeeCarousel
 ]
 
 const install = function (Vue) {
