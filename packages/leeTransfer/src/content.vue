@@ -2,7 +2,8 @@
     <div class="lee-transfer-main">
         <div class="lee-transfer-main-title">
             <div class="lee-transfer-main-title-check">
-                <input type="checkbox">{{title}}
+                <!-- <input type="checkbox"> -->
+                {{title}}
             </div>
             <div class="lee-transfer-main-title-num">{{list.filter(a => a.checked).length}}/{{list.length}}</div>
         </div>
