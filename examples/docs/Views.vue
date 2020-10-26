@@ -8,7 +8,8 @@
         <!-- <lee-tree :list="list"></lee-tree> -->
         <lee-button type="danger" @click="next">下一步</lee-button>
         <!-- <lee-steps :active="active" :list="[]"></lee-steps> -->
-        <lee-drawer title="我要打开抽屉" :show="show">dddd</lee-drawer>
+        <!-- <lee-drawer title="我要打开抽屉" :show="show">dddd</lee-drawer> -->
+        <lee-transfer :list="list"></lee-transfer>
     </div>
 </template>
 <script>
@@ -19,32 +20,58 @@ export default {
             active: 0,
             list: [
                 {
-                    id: 1,
-                    label: '我是一级1',
-                    children: [
-                        {
-                            id: 1,
-                            label: '我是二级1-1'
-                        }
-                    ]
+                    name: '第1',
+                    checked: false
                 },
                 {
-                    id: 2,
-                    label: '我是一级2',
-                    children: [
-                        {
-                            id: 1,
-                            label: '我是二级2-1',
-                            children: [
-                                {
-                                    id: 1,
-                                    label: '我是二级2-1-1'
-                                }
-                            ]
-                        }
-                    ]
+                    name: '第2',
+                    checked: false
+                },
+                {
+                    name: '第3',
+                    checked: false
+                },
+                {
+                    name: '第4',
+                    checked: false
+                },
+                {
+                    name: '第5',
+                    checked: false
+                },
+                {
+                    name: '第6',
+                    checked: false
                 }
             ]
+            // list: [
+            //     {
+            //         id: 1,
+            //         label: '我是一级1',
+            //         children: [
+            //             {
+            //                 id: 1,
+            //                 label: '我是二级1-1'
+            //             }
+            //         ]
+            //     },
+            //     {
+            //         id: 2,
+            //         label: '我是一级2',
+            //         children: [
+            //             {
+            //                 id: 1,
+            //                 label: '我是二级2-1',
+            //                 children: [
+            //                     {
+            //                         id: 1,
+            //                         label: '我是二级2-1-1'
+            //                     }
+            //                 ]
+            //             }
+            //         ]
+            //     }
+            // ]
         }
     },
     methods: {
