@@ -30,13 +30,7 @@ export default {
                 return [
                     {
                         title: '第一步',
-                        description: '第一步要做好工作dhjahja;lhf;sahhda我就是我cada范德萨发撒风洒发生范德萨发生范德萨发生地方撒风'
-                    },
-                    {
-                        title: '第二部'
-                    },
-                    {
-                        title: '第三部'
+                        description: ''
                     }
                 ]
             }
