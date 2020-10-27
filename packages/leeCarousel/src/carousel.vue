@@ -4,6 +4,14 @@
 <script>
 export default {
     name: 'LeeCarousel',
+    props: {
+        list: {
+            type: Array,
+            default: () => {
+                return []
+            }
+        }
+    },
     data () {
         return {}
     }

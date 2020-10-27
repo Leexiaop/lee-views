@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import { Docs } from './docs'
-import { Recoil } from './recoil'
+// import { Recoil } from './recoil'
 
 const originalReplace = VueRouter.prototype.push
 VueRouter.prototype.push = function push (location) {
@@ -28,14 +28,14 @@ export const routes = [
         title: '文档',
         component: () => import('@/docs/Docs.vue'),
         children: Docs
-    },
-    {
-        id: 4,
-        path: '/recoil',
-        title: 'Recoil',
-        component: () => import('@/docs/recoil/Recoil.vue'),
-        children: Recoil
     }
+    // {
+    //     id: 4,
+    //     path: '/recoil',
+    //     title: 'Recoil',
+    //     component: () => import('@/docs/recoil/Recoil.vue'),
+    //     children: Recoil
+    // }
 ]
 
 export const router = new VueRouter({

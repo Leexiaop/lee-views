@@ -9,7 +9,8 @@
         <lee-button type="danger" @click="next">下一步</lee-button>
         <!-- <lee-steps :active="active" :list="[]"></lee-steps> -->
         <!-- <lee-drawer title="我要打开抽屉" :show="show">dddd</lee-drawer> -->
-        <lee-transfer :list="list"></lee-transfer>
+        <!-- <lee-transfer :list="list"></lee-transfer> -->
+        <lee-carousel :list="list"></lee-carousel>
     </div>
 </template>
 <script>

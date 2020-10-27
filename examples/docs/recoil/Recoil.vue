@@ -17,32 +17,12 @@
     </div>
 </template>
 <script>
+import { Recoil } from '@/router/recoil'
 export default {
     name: 'Recoil',
     data () {
         return {
-            menuList: [
-                {
-                    id: 1,
-                    path: '/recoil',
-                    title: '简介'
-                },
-                {
-                    id: 2,
-                    path: '/recoil/tutorial',
-                    title: '基础教程'
-                },
-                {
-                    id: 3,
-                    path: '/recoil/guides',
-                    title: '学习指南'
-                },
-                {
-                    id: 4,
-                    path: '/recoil/api',
-                    title: 'API参考手册'
-                }
-            ]
+            menuList: Recoil
         }
     }
 }

@@ -1,8 +1,8 @@
 export const Recoil = [
     {
         id: 1,
-        path: '/',
-        name: 'Index',
+        path: '/recoil',
+        name: 'introduce',
         title: '简介',
         component: () => import('@/components/recoil/Index.md'),
         meta: {
